@@ -16,6 +16,7 @@ lang_code_data/
 
 # Distribution / packaging
 .Python
+creating_cyt5_small/
 build/
 develop-eggs/
 dist/
