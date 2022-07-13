@@ -38,6 +38,10 @@ from transformers import (
     DataCollatorForSeq2Seq,
     HfArgumentParser,
     Seq2SeqTrainer,
+    MBartTokenizer,
+    MBartTokenizerFast,
+    MBart50Tokenizer,
+    MBart50TokenizerFast,
     Seq2SeqTrainingArguments,
     set_seed,
 )
@@ -72,7 +76,6 @@ class ModelArguments:
     """
     Arguments pertaining to which model/config/tokenizer we are going to fine-tune from.
     """
-
     model_name_or_path: str = field(
         metadata={"help": "Path to pretrained model or model identifier from huggingface.co/models"}
     )
