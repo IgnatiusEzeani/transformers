@@ -597,7 +597,7 @@ class TrainingArguments:
     )
     logging_dir: Optional[str] = field(default=None, metadata={"help": "Tensorboard log dir."})
     logging_strategy: Union[IntervalStrategy, str] = field(
-        default="steps",
+        default="epoch",
         metadata={"help": "The logging strategy to use."},
     )
     logging_first_step: bool = field(default=False, metadata={"help": "Log the first global_step"})
